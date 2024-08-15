@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100px;
+  text-align: center;
+}
+
+.color-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.new-color-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-color-form input {
+  margin: 10px;
+}

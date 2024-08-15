@@ -1,0 +1,44 @@
+{
+  "name": "dogfinder",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/user-event": "*",
+    "axios": "*",
+    "concurrently": "*",
+    "json-server": "*",
+    "react": "^18.3.1",
+    "react-dom": "*",
+    "react-router-dom": "^6.26.1",
+    "react-scripts": "*",
+    "web-vitals": "*"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
+    "start-fe": "react-scripts start",
+    "start-be": "json-server --watch db.json --port 5001",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "jest": "^27.5.1"
+  }
+}
